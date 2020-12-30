@@ -1,0 +1,24 @@
+<project name="Reporty-ng Report" default="reporty-ng-report" basedir=".">
+	<!-- Sets the property varaibles to point to respective directories -->
+	<property name="xslt-report-dir" value="${basedir}/reporty-ng/" />
+	<property name="report-dir" value="${basedir}/html-report" />
+	<property name="lib-dir" value="${basedir}/lib" />
+	
+	<path id="test.classpath">
+		<fileset dir="${lib-dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+	
+	<target name="reporty-ng-report">
+		<delete dir="${xslt-report-dir}" />
+		<mkdir dir="${xslt-report-dir}" />
+		<xslt in="${basedir}/test-output/testng-results.xml" style="${basedir}/resources/testng-results.xsl" out="${xslt-report-dir}/index.html">
+			<param name="testNgXslt.outputDir" expression="${xslt-report-dir}" />
+			<param name="testNgXslt.sortTestCaseLinks" expression="true" />
+			<param name="testNgXslt.testDetailsFilter" expression="FAIL,SKIP,PASS,CONF,BY_CLASS" />
+			<param name="testNgXslt.showRuntimeTotals" expression="true" />
+			<classpath refid="test.classpath" />
+		</xslt>
+	</target>
+</project>

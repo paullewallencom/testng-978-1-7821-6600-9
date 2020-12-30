@@ -1,0 +1,12 @@
+<suite name="Junit Testng Suite">
+	<test junit="true" name="Junit test">
+		<classes>
+			<class name="test.sample.junit.JunitSampleTest" />
+		</classes>
+	</test>
+	<test name="Testng test">
+		<classes>
+			<class name="test.sample.testng.TestngSampleTest" />
+		</classes>
+	</test>
+</suite>

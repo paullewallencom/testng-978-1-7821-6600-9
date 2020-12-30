@@ -1,0 +1,7 @@
+<suite name="Different class dependency Suite" verbose="1">
+	<test name="Different class dependency Test">
+		<packages>
+			<package name="test.depends.groups" />
+		</packages>
+	</test>
+</suite>

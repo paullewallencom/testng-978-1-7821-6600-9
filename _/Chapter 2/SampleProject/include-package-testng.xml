@@ -1,0 +1,9 @@
+<suite name="Include Package Suite" verbose="1">
+	<test name="Include Package Test">
+		<packages>
+			<package name="test.*">
+				<include name="test.secondpackage" />
+			</package>
+		</packages>
+	</test>
+</suite>

@@ -1,0 +1,7 @@
+<suite name="Inheritance Suite" verbose="1" >
+  <test name="Inheritance Test" >
+    <classes>
+    	<class name="test.beforeafter.TestClass" />
+    </classes>
+  </test>
+</suite>

@@ -1,0 +1,9 @@
+<suite name="Class Suite" verbose="1">
+	<test name="Test">
+		<classes>
+			<class name="test.firstpackage.FirstTestClass" />
+			<class name="test.secondpackage.FirstTestClass" />
+			<class name="test.thirdpackage.FirstTestClass" />
+		</classes>
+	</test>
+</suite>

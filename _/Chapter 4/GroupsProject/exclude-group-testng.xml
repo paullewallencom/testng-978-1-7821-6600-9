@@ -1,0 +1,13 @@
+<suite name="Exlude Group Suite" verbose="1">
+	<test name="Exclude Group Test">
+		<groups>
+			<run>
+				<include name="include-group" />
+				<exclude name="exclude-group" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test.groups.ExcludeGroup" />
+		</classes>
+	</test>
+</suite>

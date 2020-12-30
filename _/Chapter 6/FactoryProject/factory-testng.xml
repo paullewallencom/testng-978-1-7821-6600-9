@@ -1,0 +1,7 @@
+<suite name="Factory suite" verbose="1"  >
+	<test name="Factory test" group-by-instances="true">
+		<classes>
+			<class name="test.factory.DependencyFactory" />
+		</classes>
+	</test>
+</suite>

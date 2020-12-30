@@ -1,0 +1,7 @@
+<suite name="Independent test Suite" >
+	<test name="Independent test">
+		<classes>
+			<class name="test.parallelism.IndependentTestThreading" />
+		</classes>
+	</test>
+</suite>

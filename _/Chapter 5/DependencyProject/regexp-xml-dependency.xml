@@ -1,0 +1,16 @@
+<suite name="Regexp xml dependency Suite" verbose="1">
+	<test name="Regexp xml dependency Test">
+		<groups>
+			<dependencies>
+				<group name="test" depends-on="starts-with.*" />				
+			</dependencies>
+			<run>
+				<include name="test" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="test.depends.xml.RegularExpressionXmlTest" />
+		</classes>
+	</test>
+</suite>	

@@ -1,0 +1,7 @@
+<suite name="Sample Build Suite">
+	<test name="Sample Build test">
+		<classes>
+			<class name="test.SampleBuildTest" />
+		</classes>
+	</test>
+</suite>

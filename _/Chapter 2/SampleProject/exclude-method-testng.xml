@@ -1,0 +1,11 @@
+<suite name="Exclude Method Suite" verbose="1">
+	<test name="Exclude Method Test">
+		<classes>
+			<class name="test.firstpackage.FirstTestClass">
+				<methods>
+					<exclude name="firstTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

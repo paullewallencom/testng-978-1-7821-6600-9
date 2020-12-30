@@ -1,0 +1,21 @@
+<suite name="Group of group Suite" verbose="1">
+	<test name="Group of group Test">
+		<groups>
+			<define name="include-group">
+				<include name="test-one-include" />
+				<include name="test-two-include" />
+			</define>
+			<define name="exclude-group">
+				<include name="test-one-exclude" />
+				<include name="test-two-exclude" />
+			</define>
+			<run>
+				<include name="include-group" />
+				<exclude name="exclude-group" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test.groups.RegularExpressionGroup" />
+		</classes>
+	</test>
+</suite>

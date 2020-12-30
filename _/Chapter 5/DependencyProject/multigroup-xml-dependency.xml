@@ -1,0 +1,16 @@
+<suite name="Multi group xml dependency Suite" verbose="1">
+	<test name="Multi group xml dependency Test">
+		<groups>
+			<dependencies>
+				<group name="dependent-group" depends-on="test-group-one test-group-two" />				
+			</dependencies>
+			<run>
+				<include name="dependent-group" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="test.depends.xml.MultiGrpXmlDependency" />
+		</classes>
+	</test>
+</suite>	

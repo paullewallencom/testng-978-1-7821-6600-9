@@ -1,0 +1,8 @@
+<suite name="Test-class Suite" parallel="classes" thread-count="2"  >
+	<test name="Test-class test" group-by-instances="true">
+		<classes>
+			<class name="test.parallelism.SampleTestClassOne" />
+			<class name="test.parallelism.SampleTestClassTwo" />
+		</classes>
+	</test>
+</suite>

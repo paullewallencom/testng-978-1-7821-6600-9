@@ -1,0 +1,7 @@
+<suite name="Simple Junit Suite">
+	<test junit="true" name="Simple Junit test">
+		<classes>
+			<class name="test.sample.junit.JunitSampleTest" />
+		</classes>
+	</test>
+</suite>
